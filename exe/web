@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+path = File.expand_path("../lib", __dir__)
+$LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
+
+require_relative "../load_path"
+
+require "web"
+require "web/run"
+
+::Web::Run.()
